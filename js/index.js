@@ -6,6 +6,8 @@ var key = "Car";
 var value = "Mazda";
 
 
+var set = window.localStorage.setItem( key, value);
+
 var output = window.localStorage.getItem(key);
 
 
@@ -19,8 +21,8 @@ function updateDisplay() {
 	$("#resumed").text("Application paused: " + paused_count);
 	$("#paused").text("Application resumed: " + resumed_count);
 	$("#localStorage").text("Stored Value: " + output);
-	
 }
+
 
 
 // device APIs are available
